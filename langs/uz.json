@@ -1,0 +1,72 @@
+{
+    "nav": {
+        "home": "Asosiy sahifa",
+        "reviews": "Sharhlar",
+        "numbers": "Xonalar",
+        "contacts": "Aloqa"
+    },
+    "homepage": {
+        "hero": {
+            "subtitle": "XUSH KELIBSIZ",
+            "title": "Eski uslub, zamonaviy qulayliklar",
+            "dcr": "Hashamat va Quvnoqlik San’ati: Mehmonlarimiz uchun maksimal qulaylik va zavq uchun har bir detal mukammallashtirilgan hashamatli mehmonxona dunyosiga kirish. Hashamatni kashf eting, joylashuv, xizmat ko‘rsatish va qulayliklar mukammal mehmondo‘stlikda birlashgan joyda.",
+            "button": "Ariza qoldiring"
+        },
+        "sectiontwo": {
+            "subtitle": "KURORT MEHMONXONASI",
+            "title": "Heaven joyida dam oling",
+            "dcr": "Samarkandning qadimiy markazida joylashgan noyob mehmonxonamizga xush kelibsiz. Sharqona uslubda qurilgan mehmonxonaimiz tarixiy joziba va zamonaviy qulayliklarning mukammal kombinatsiyasini taklif etadi. Shaharning asosiy diqqatga sazovor joylari va mashhur Siyab bozori yaqinida joylashgan mehmonxonaimiz, Samarqandning ulug‘vor muhitidan bahramand bo‘lishni xohlaganlar uchun mukammal tanlovdir. Sharq an’analari ilhomlantirgan hashamatli ichki dizayndan va sizning qabul qilishingizni unutilmas qiladigan birinchi darajali xizmatdan zavqlaning.",
+            "button": "Aloqa"
+        },
+        "sectionthree": {
+            "title": "Transfer",
+            "title2": "Nonushta",
+            "title3": "Ekskursiyalar",
+            "dcr": "Biz aeroport yoki vokzaldan mehmonxonaimizga va qaytish yo‘lida qulay transferni taklif etamiz. Qulay sayohatdan zavqlaning, dam oling va tashvishlarni unutib qo‘ying – bizning professional haydovchimiz sizni kutib olib, tez va xavfsiz sayohatni ta’minlaydi.",
+            "dcr2": "Kunini mehmonxonamizda ajoyib shved stolidan boshlang! Yangi mevalar, pishiriqlar va an’anaviy sharq taomlaridan bahramand bo‘ling. Issiq va sovuq taomlarning keng tanlovi sizga Samarqandning go‘zalligini o‘rganish uchun energiya beradi.",
+            "dcr3": "Mehmonxonamiz Samarqand va uning atrofidagi professional ekskursiyalarni tashkil etadi. Bizning tajribali gidlarimiz yordamida shaharning tarixiy va madaniy boyliklarini kashf eting va tashrifingizdan maksimal zavq oling."
+        },
+        "sectionfour": {
+            "title": "Bir kishilik deluxe xona",
+            "title2": "Ikki kishilik deluxe xona",
+            "title3": "Uch kishilik deluxe xona",
+            "dcr": "",
+            "dcr2": "",
+            "dcr3": "",
+            "button": "rezervatsiya qilish"
+        },
+        "sectionfive": {
+            "title": "Barcha xonalarni kashf eting",
+            "subtitle": "O‘zingizni va oilangizni his eting",
+            "dcr": "Har bir xona qulaylik va mehmondo‘stlikni namoyish etuvchi qulay mehmonxonalarni kashf eting, bu sizning qolishingizni va barcha mehmonlar uchun unutilmas tajribani ta’minlaydi!",
+            "button": "Ariza qoldiring"
+        },
+        "sectionsix": {
+            "title": "Mijozimiz nima deydi",
+            "dcr": "Mijozning ovozi: bizning xizmatimiz haqidagi taassurotlar va sharhlar, bizni yanada yuqori sifatga va mehmonlarimizning ehtiyojlarini qondirishga ilhomlantiradi."
+        },
+        "sectionseven": {
+            "title": "Har bir daqiqani biz bilan suratga oling",
+            "dcr": "Har bir qimmatli daqiqani biz bilan saqlang: bizning noyob xizmatlarimiz va mehmondo‘st atmosferamiz sizga uzoq yillar davomida saqlanadigan xotiralarni yaratishga yordam beradi.",
+            "button": "Aloqa"
+        }
+    },
+    "contact": {
+        "title": "Aloqa",
+        "info": {
+            "title": "Telefon",
+            "title1": "Manzil",
+            "title2": "Email"
+        },
+        "map": {
+            "title": "Bizning mehmonxonamizda dam oling",
+            "subtitle": "Altair mehmonxonasining shtab-kvartirasi",
+            "answer": "",
+            "question": ""
+        }
+    },
+    "footer": {
+        "title": "Altair 2024 © Barcha huquqlar himoyalangan",
+        "by": "DotLabs tomonidan"
+    }
+}

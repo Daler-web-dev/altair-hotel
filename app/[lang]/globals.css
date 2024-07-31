@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.custom-container {
+  @apply max-w-[1320px] w-full m-auto px-24 max-lg:px-14 max-md:px-3
+}
+
+.padding {
+  @apply py-32 max-2xl:py-24 max-xl:py-16 max-md:py-10;
+}
+
+.text-gray {
+  @apply text-[#6d6960];
+}
+
+.button {
+  @apply py-2 px-3 rounded-md text-sm font-semibold bg-[#9e7777] text-white;
+}
+
+.line {
+  @apply w-20 h-1 my-7 max-lg:my-4 border-none;
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5em;
+    background: #7d5a50;
+    z-index: 2;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  }
+
+  .menu-link-item {
+    width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+/* .swiper-slide-prev,
+.swiper-slide-next {
+  transition: ease 200ms;
+  transform: scale(0.9) !important;
+} */
+
+.rooms-blocks:nth-child(2n+1) {
+  background-color: #9e7777;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #7d5a50;
+  border-radius: 9999px;
+  width: 40px !important;
+  height: 40px !important;
+  box-shadow: 0 3px 10px #7d5a50;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: #fff !important;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select::before,
+.select::after {
+  --size: 0.2rem;
+  content: "";
+  position: absolute;
+  right: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid white;
+  top: 35%;
+}
+
+.select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid white;
+  top: 60%;
+}
