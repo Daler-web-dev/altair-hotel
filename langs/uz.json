@@ -19,6 +19,7 @@
             "button": "Aloqa"
         },
         "sectionthree": {
+            "secTitle": "Bizning xizmatlarimiz",
             "title": "Transfer",
             "title2": "Nonushta",
             "title3": "Ekskursiyalar",
@@ -49,6 +50,10 @@
             "title": "Har bir daqiqani biz bilan suratga oling",
             "dcr": "Har bir qimmatli daqiqani biz bilan saqlang: bizning noyob xizmatlarimiz va mehmondo‘st atmosferamiz sizga uzoq yillar davomida saqlanadigan xotiralarni yaratishga yordam beradi.",
             "button": "Aloqa"
+        },
+        "gallery": {
+            "title": "Virtual sayohat",
+            "dcr": "Xonalarimiz va jihozlarimiz qulayligi va uslubidan bahramand bo'ling."
         }
     },
     "contact": {

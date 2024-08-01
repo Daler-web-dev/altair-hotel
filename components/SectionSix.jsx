@@ -7,7 +7,7 @@ import React from 'react'
 import Marquee from "react-fast-marquee";
 
 gsap.registerPlugin(ScrollTrigger);
-const SectionSix = ({ Playfair_DisplayFont }) => {
+const SectionSix = ({ Playfair_DisplayFont, homepage }) => {
 
     useGSAP(() => {
         gsap.from(".gallery-texts", {
@@ -26,9 +26,9 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
     return (
         <div className="padding">
             <div className="custom-container text-center gallery">
-                <h2 className={`gallery-texts text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Caputer Every Moment With Us</h2>
+                <h2 className={`gallery-texts text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>{homepage.gallery.title}</h2>
                 <hr className="gallery-texts line m-auto bg-[#6d6960]" />
-                <p className="gallery-texts text-sm tracking-[1px] leading-5 text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque similique suscipit fugit blanditiis quas fugiat cupiditate animi voluptas, ipsum aspernatur illum atque id, deserunt dolorum?</p>
+                <p className="gallery-texts text-sm tracking-[1px] leading-5 text-gray">{homepage.gallery.dcr}</p>
             </div>
 
             <div className="mt-10">

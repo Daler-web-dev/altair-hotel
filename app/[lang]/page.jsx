@@ -45,7 +45,7 @@ export default async function Home({ params: { lang } }) {
          </section> */}
 
          <section>
-            <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
          <section className="bg-[#c9aa7e]">

@@ -2,9 +2,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaBus } from "react-icons/fa";
-import { MdDinnerDining } from "react-icons/md";
-import { FaCameraRetro } from "react-icons/fa";
+import Image from 'next/image';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -13,17 +11,17 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionthree.title,
             dcr: homepage.sectionthree.dcr,
-            icon: <FaBus size={30} color="#fff" />
+            img: "/images/services/transfer.png"
         },
         {
             title: homepage.sectionthree.title2,
             dcr: homepage.sectionthree.dcr2,
-            icon: <MdDinnerDining size={30} color="#fff" />
+            img: "/images/services/transfer.png"
         },
         {
             title: homepage.sectionthree.title3,
             dcr: homepage.sectionthree.dcr3,
-            icon: <FaCameraRetro size={30} color="#fff" />
+            img: "/images/services/transfer.png"
         },
     ]
 
@@ -40,24 +38,36 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
     }, []);
 
     return (
-        <div className="as custom-container grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-20 max-xl:gap-16 max-lg:gap-10 padding">
-            {
-                arr.map((el, index) => (
-                    <div key={index} className="a max-sm:px-3 text-white">
-                        <div className="border-4 border-white p-3 rounded-full w-fit m-auto">
-                            {el.icon}
+        <div className="custom-container padding">
+            <div className="mb-24 max-md:mb-14 text-center">
+                <h2 className={`text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-white ${Playfair_DisplayFont.className}`}>{homepage.sectionthree.secTitle}</h2>
+            </div>
+            <div className="as grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-5 gap-y-20 ">
+                {
+                    arr.map((el, index) => (
+                        <div key={index} className="a px-5">
+                            <div className="absolute -top-12 max-md:-top-5 -left-0 z-[-1] w-full h-52 overflow-hidden">
+                                <Image
+                                    className='w-full h-full object-cover object-center rounded-xl'
+                                    src={el.img}
+                                    width={1000}
+                                    height={1000}
+                                    alt='img'
+                                />
+                            </div>
+
+                            <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-black/30 backdrop-blur-[2px]">
+                                <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
+                                    {el.title}
+                                </h3>
+                                <p className="mt-3 text-sm leading-5 tracking-[1px]">
+                                    {el.dcr}
+                                </p>
+                            </div>
                         </div>
-                        <div className="text-center mt-5 max-md:mt-3">
-                            <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
-                                {el.title}
-                            </h3>
-                            <p className="mt-3 text-sm leading-5 tracking-[1px]">
-                                {el.dcr}
-                            </p>
-                        </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
     )
 }
