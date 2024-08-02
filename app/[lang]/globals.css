@@ -59,8 +59,15 @@
   transform: scale(0.9) !important;
 } */
 
+.rooms-blocks {
+  @apply max-w-52 max-2xl:max-w-44 max-sm:max-w-36 py-5 max-sm:py-3 px-10 max-2xl:px-5;
+}
+
 .rooms-blocks:nth-child(2n+1) {
   background-color: #9e7777;
+}
+.swiper-slide {
+  height: auto !important;
 }
 
 .swiper-button-prev,

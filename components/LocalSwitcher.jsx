@@ -26,7 +26,7 @@ export default function LocalSwitcher({ lang }) {
                :
                <Image
                   className="absolute top-0.5 right-3.5 select-none pointer-events-none"
-                  src={"/images/icons/uz.png"}
+                  src={"/images/icons/usa.png"}
                   width={18}
                   height={18}
                   alt="uz"
@@ -41,8 +41,8 @@ export default function LocalSwitcher({ lang }) {
             <option value='ru' className="flex">
                Ru
             </option>
-            <option value='uz'>
-               Uz
+            <option value='en'>
+               En
             </option>
          </select>
       </label>

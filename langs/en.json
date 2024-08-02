@@ -1,0 +1,91 @@
+{
+    "nav": {
+        "home": "Home",
+        "reviews": "Reviews",
+        "numbers": "Rooms",
+        "contacts": "Contacts"
+    },
+    "homepage": {
+        "hero": {
+            "subtitle": "WELCOME TO HOTEL Altair",
+            "title": "OLD STYLE, MODERN COMFORT",
+            "dcr": "The Art of Luxury and Comfort: Immerse Yourself in the Amazing World of a Luxurious Hotel Where Every Detail is Perfected for Maximum Comfort and Guest Pleasure. Open the Doors to Luxury Where Location, Service, and Amenities Combine for Perfect Hospitality.",
+            "button": "Request a Quote"
+        },
+        "sectiontwo": {
+            "subtitle": "RESORT HOTEL",
+            "title": "ABOUT US",
+            "dcr": "Welcome to our unique hotel located in the heart of ancient Samarkand. Built in a traditional Eastern style, our hotel offers an unparalleled blend of historical charm and modern comfort. Just steps away from the city's main attractions and the famous Siyab Bazaar, our hotel is perfect for those looking to immerse themselves in the majestic atmosphere of Samarkand. Enjoy luxurious interiors inspired by Eastern traditions and first-class service that will make your stay unforgettable.",
+            "button": "Contacts"
+        },
+        "sectionthree": {
+            "secTitle": "Our Services",
+            "title": "Transfer",
+            "title2": "Breakfast",
+            "title3": "Excursions",
+            "dcr": "We offer convenient transfers from the airport or train station directly to our hotel and back. Enjoy a comfortable ride, relax, and forget about worries – our professional driver will meet you, ensuring a quick and safe journey.",
+            "dcr2": "Start your day with a delicious buffet breakfast at our hotel! Enjoy fresh fruits, pastries, and traditional Eastern delicacies. A wide selection of hot and cold dishes will give you the energy to explore the magnificent Samarkand.",
+            "dcr3": "Our hotel offers the organization of professional excursions around Samarkand and its surroundings. Discover the historical and cultural treasures of the city with our experienced guides who will help you make the most of your visit."
+        },
+        "sectionfour": {
+            "title": "Single Deluxe Room",
+            "title2": "Double Deluxe Room",
+            "title3": "Triple Deluxe Room",
+            "dcr": "",
+            "dcr2": "",
+            "dcr3": "",
+            "services": "King-Size Bed",
+            "services2": "Channels in Multiple Languages",
+            "services3": "Access to Observation Deck",
+            "services4": "Electric Kettle",
+            "services5": "Tea, Coffee, Sugar",
+            "services6": "Toiletries",
+            "services7": "Daily Cleaning",
+            "button": "Book Now"
+        },
+        "sectionfive": {
+            "title": "Discover All Rooms",
+            "subtitle": "Feel at Home with Your Family",
+            "dcr": "Discover cozy accommodations where each room embodies comfort and hospitality, ensuring an ideal stay and unforgettable experience for all guests!",
+            "button": "Request a Quote"
+        },
+        "sectionsix": {
+            "title": "What Our Clients Say",
+            "dcr": "The voice of the client: impressions and feedback about our service, inspiring us to strive for even greater quality and to meet the needs of our guests."
+        },
+        "sectionseven": {
+            "title": "Capture Every Moment with Us",
+            "dcr": "Capture every precious moment with us: our unique services and welcoming atmosphere will help create memories you'll cherish for years to come.",
+            "button": "Contacts"
+        },
+        "gallery": {
+            "title": "Virtual Tour",
+            "dcr": "Evaluate the comfort and style of our rooms and amenities."
+        }
+    },
+    "contact": {
+        "title": "Contacts",
+        "info": {
+            "title": "Phone",
+            "title1": "Location",
+            "title2": "Email"
+        },
+        "map": {
+            "title": "Relax at Our Hotel",
+            "subtitle": "Headquarters of Hotel Altair",
+            "answer": "",
+            "question": ""
+        }
+    },
+    "footer": {
+        "title": "Altair 2024 © All Rights Reserved",
+        "by": "By in DotLabs"
+    },
+    "modal": {
+        "title": "Submit a Request",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "number": "Number",
+        "button": "Save"
+    }
+}

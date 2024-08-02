@@ -20,12 +20,12 @@ const Playfair_DisplayFont = Playfair_Display({
 });
 
 export default async function Home({ params: { lang } }) {
-   const { homepage } = await getDictionary(lang);
+   const { homepage, modal } = await getDictionary(lang);
 
    return (
       <>
          <section>
-            <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
+            <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} modalLang={modal} />
          </section>
 
          <section>

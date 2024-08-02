@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import Modal from './Modal'
 
-const Hero = ({ Playfair_DisplayFont, homepage }) => {
+const Hero = ({ Playfair_DisplayFont, homepage, modalLang }) => {
     const [isOpenModal, setIsOpenModal] = useState(false);
 
     const openModal = () => setIsOpenModal(true);
@@ -27,33 +27,15 @@ const Hero = ({ Playfair_DisplayFont, homepage }) => {
 
     return (
         <>
-            <Modal isOpenModal={isOpenModal} closeModal={closeModal} />
-            <div className="bg-[url('/images/image-2.webp')] bg-no-repeat bg-cover bg-center relative z-10">
+            <Modal isOpenModal={isOpenModal} closeModal={closeModal} modalLang={modalLang} />
+            <div className=" max-sm:text-center bg-[url('/images/image-18.webp')] bg-no-repeat bg-cover bg-center relative z-10">
                 <div className="absolute inset-0 bg-black/50 top-0 left-0 z-[-1]"></div>
                 <div className='hero custom-container flex gap-5 items-center justify-between padding'>
-                    <div className="w-3/5 max-md:w-full">
-                        <p className={`animated tracking-[4px] text-white ${Playfair_DisplayFont.className}`}>{homepage.hero.subtitle}</p>
-                        <h2 className={`animated text-4xl max-xs:text-4xl font-medium mb-3 text-white ${Playfair_DisplayFont.className}`}>{homepage.hero.title}</h2>
-                        {/* <div className="max-h-[250px] my-2 rounded-xl overflow-hidden md:hidden">
-                            <Image
-                                className='w-full h-full object-cover object-center -translate-y-48'
-                                width={1000}
-                                height={1000}
-                                src={"/images/image-2.webp"}
-                                alt='image'
-                            /></div> */}
-                        {/* <p className='animated text-sm text-white'>{homepage.hero.dcr}</p> */}
-                        <button onClick={openModal} className='animated button mt-5'>{homepage.hero.button}</button>
+                    <div className="w-3/5 h-[45vh] max-sm:h-[80vh] max-md:w-full max-sm:flex max-sm:flex-col">
+                        <p className={`animated tracking-[4px] normal-case text-white ${Playfair_DisplayFont.className}`}>{homepage.hero.subtitle}</p>
+                        <h2 className={`animated text-5xl max-lg:text-4xl max-xs:text-3xl font-medium mb-3 normal-case text-white ${Playfair_DisplayFont.className}`}>{homepage.hero.title}</h2>
+                        <button onClick={openModal} className='animated button mt-20  max-sm:mt-auto'>{homepage.hero.button}</button>
                     </div>
-                    {/* <div className="hero-img w-1/2 max-md:hidden max-w-[400px] max-h-[400px] max-xl:max-w-[350px] max-xl:max-h-[350px] max-lg:max-w-[280px] max-lg:max-h-[280px] rounded-tl-[250px] max-lg:rounded-tl-[200px] overflow-hidden">
-                        <Image
-                            className='w-full h-full object-cover object-bottom -translate-y-10'
-                            width={1000}
-                            height={1000}
-                            src={"/images/image-2.webp"}
-                            alt='image'
-                        />
-                    </div> */}
                 </div>
             </div>
         </>

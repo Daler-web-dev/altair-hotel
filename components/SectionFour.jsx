@@ -7,12 +7,18 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { FaHotel } from 'react-icons/fa'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, FreeMode, Pagination } from 'swiper/modules';
+import { GrChannel } from "react-icons/gr";
+import { MdBalcony } from "react-icons/md";
+import { IoIosBed } from "react-icons/io";
+import { MdCoffeeMaker } from "react-icons/md";
+import { FaCoffee } from "react-icons/fa";
+import { FaToiletPortable } from "react-icons/fa6";
+import { GiVacuumCleaner } from "react-icons/gi";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-
 
 gsap.registerPlugin(ScrollTrigger);
 const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
@@ -23,24 +29,32 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
             img: "/images/image-1.webp",
             additionally: [
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services,
+                    icon: <IoIosBed size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services2,
+                    icon: <GrChannel size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services3,
+                    icon: <MdBalcony size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services4,
+                    icon: <MdCoffeeMaker size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services5,
+                    icon: <FaCoffee size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services6,
+                    icon: <FaToiletPortable size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services7,
+                    icon: <GiVacuumCleaner size={20} color="#D7DDE8" />,
                 }
             ]
         },
@@ -50,24 +64,32 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
             img: "/images/image-1.webp",
             additionally: [
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services,
+                    icon: <IoIosBed size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services2,
+                    icon: <GrChannel size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services3,
+                    icon: <MdBalcony size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services4,
+                    icon: <MdCoffeeMaker size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services5,
+                    icon: <FaCoffee size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services6,
+                    icon: <FaToiletPortable size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services7,
+                    icon: <GiVacuumCleaner size={20} color="#D7DDE8" />,
                 }
             ]
         },
@@ -77,24 +99,32 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
             img: "/images/image-1.webp",
             additionally: [
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services,
+                    icon: <IoIosBed size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services2,
+                    icon: <GrChannel size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services3,
+                    icon: <MdBalcony size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services4,
+                    icon: <MdCoffeeMaker size={20} color="#D7DDE8" />,
                 },
                 {
-                    title: "Free Wifi",
-                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                    title: homepage.sectionfour.services5,
+                    icon: <FaCoffee size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services6,
+                    icon: <FaToiletPortable size={20} color="#D7DDE8" />,
+                },
+                {
+                    title: homepage.sectionfour.services7,
+                    icon: <GiVacuumCleaner size={20} color="#D7DDE8" />,
                 }
             ]
         },
@@ -173,22 +203,21 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                                             />
                                         </div>
                                     </div>
-                                    <div className="">
+                                    <div>
                                         <Swiper
+                                            className='w-full h-full'
                                             slidesPerView={"auto"}
                                             modules={[FreeMode, Pagination]}
                                             freeMode={true}
                                         >
                                             {
                                                 el.additionally.map((i, idx) => (
-                                                    <SwiperSlide key={idx} className='rooms-blocks max-w-52 max-2xl:max-w-44 max-sm:max-w-36'>
-                                                        <div className="py-5 max-sm:py-3 px-10 max-2xl:px-5">
-                                                            <div className="border-4 max-sm:border-2 border-[#D7DDE8] p-3 max-sm:p-2 rounded-full w-fit m-auto">
-                                                                <FaHotel size={20} color="#D7DDE8" />
-                                                            </div>
-                                                            <h4 className="text-center mt-1">{i.title}</h4>
-                                                            <p className="text-center md:mt-1 text-sm max-lg:text-xs ">{i.dcr}</p>
+                                                    <SwiperSlide key={idx} className='rooms-blocks h-40'>
+                                                        <div className="border-4 max-sm:border-2 border-[#D7DDE8] p-3 max-sm:p-2 rounded-full w-fit m-auto">
+                                                            {i.icon}
                                                         </div>
+
+                                                        <h4 className="text-sm text-center mt-1">{i.title}</h4>
                                                     </SwiperSlide>
                                                 ))
                                             }
