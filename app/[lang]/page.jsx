@@ -53,7 +53,7 @@ export default async function Home({ params: { lang } }) {
          </section>
 
          <section className="bg-[#c9aa7e]">
-            <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
+            <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} modalLang={modal} />
          </section>
       </>
    );
