@@ -47,7 +47,7 @@ const Map = ({ Playfair_DisplayFont, contact }) => {
                 </div>
             </div>
             <div className="map lg:w-1/2 w-full rounded-lg overflow-hidden">
-                <iframe className='w-full min-h-[400px] max-lg:min-h-[300px]' src="https://yandex.uz/map-widget/v1/?l=sat&ll=-114.211469%2C27.438976&z=3" frameborder="1" allowfullscreen="true"></iframe>
+                <iframe className='w-full min-h-[400px] max-lg:min-h-[300px]' src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=66.973637%2C39.661262&source=mapframe&utm_source=mapframe&z=20" frameborder="1" allowfullscreen="true"></iframe>
             </div>
         </div>
     )

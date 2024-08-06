@@ -12,12 +12,12 @@ const ContactInfo = ({ Playfair_DisplayFont, contact }) => {
         {
             icon: <IoIosCall className='text-[30px] max-lg:text-[25px]' color='#fff' />,
             title: contact.info.title,
-            dcr: "+998(99)999-9999"
+            dcr: "+998(88)217-99-99"
         },
         {
             icon: <FaMapMarkedAlt className='text-[30px] max-lg:text-[25px]' color='#fff' />,
             title: contact.info.title1,
-            dcr: "Location"
+            dcr: contact.info.subtitle
         },
         {
             icon: <MdEmail className='text-[30px] max-lg:text-[25px]' color='#fff' />,

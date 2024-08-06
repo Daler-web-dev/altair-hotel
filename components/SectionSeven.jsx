@@ -7,6 +7,21 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger);
 const SectionSeven = ({ Playfair_DisplayFont, homepage }) => {
+    const arr = [
+        {
+            dcr: homepage.sectionsix.com
+        },
+        {
+            dcr: homepage.sectionsix.com2
+        },
+        {
+            dcr: homepage.sectionsix.com3
+        },
+        {
+            dcr: homepage.sectionsix.com4
+        }
+    ]
+
     useGSAP(() => {
         gsap.from(".texts", {
             opacity: 0,
@@ -41,14 +56,12 @@ const SectionSeven = ({ Playfair_DisplayFont, homepage }) => {
                 </p>
             </div>
 
-            <div className="coms flex items-center gap-5 max-md:gap-3 mt-14 max-md:mt-8 overflow-auto scroll-none">
+            <div className="coms flex gap-5 max-md:gap-3 mt-14 max-md:mt-8 overflow-auto scroll-none">
                 {
-                    [0, 1, 2].map((i) => (
-                        <div key={i} className="com min-w-80 max-md:min-w-60 flex flex-col p-8 max-md:p-4 rounded-md bg-[#7d5a50] text-white">
-                            <p className="max-md:text-sm text-center mb-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis facilis rerum odit harum itaque sequi est minus id blanditiis corporis cum, impedit asperiores mollitia nesciunt totam, nam pariatur! Fugiat?
-                            </p>
-                            <div className="w-fit m-auto flex gap-3 mt-auto">
+                    arr.map((i, idx) => (
+                        <div key={idx} className="com min-w-80 max-md:min-w-60 p-8 max-md:p-4 flex flex-col rounded-md bg-[#7d5a50] text-white">
+                            <p className="text-sm text-center mb-5">{i.dcr}</p>
+                            <div className="w-fit h-fit mx-auto flex gap-3 mt-auto">
                                 <div className="bg-gray-500 p-6 rounded-lg"></div>
                                 <div className="">
                                     <p>Camella</p>

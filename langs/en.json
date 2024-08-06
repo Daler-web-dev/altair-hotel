@@ -29,7 +29,7 @@
         },
         "sectionfour": {
             "title": "Single Deluxe Room",
-            "title2": "Double Deluxe Room",
+            "title2": "Deluxe Double or Twin Room",
             "title3": "Triple Deluxe Room",
             "dcr": "",
             "dcr2": "",
@@ -51,7 +51,11 @@
         },
         "sectionsix": {
             "title": "What Our Clients Say",
-            "dcr": "The voice of the client: impressions and feedback about our service, inspiring us to strive for even greater quality and to meet the needs of our guests."
+            "dcr": "The voice of the client: impressions and feedback about our service, inspiring us to strive for even greater quality and to meet the needs of our guests.",
+            "com": "I recently stayed at the Altair Hotel and was thrilled. Excellent service, friendly staff, and a convenient location within walking distance of the city's main attractions make it perfect for exploring the city.",
+            "com2": "From the moment we arrived, we felt a warm welcome and attentive care from the hotel staff. They were not only professional but also genuinely responsive, always ready to help and make our stay as comfortable as possible.",
+            "com3": "The rooms at Altair were impeccably clean and cozy, adding extra comfort to our stay. The breakfasts at the hotel were also pleasantly surprising with their variety and high-quality dishes.",
+            "com4": "Altair was a true discovery for us, and I definitely recommend this hotel to anyone who wants to enjoy not only excellent service but also a convenient location in the heart of the city. A big thank you to the entire staff for making our stay so pleasant and memorable!"
         },
         "sectionseven": {
             "title": "Capture Every Moment with Us",
@@ -68,7 +72,8 @@
         "info": {
             "title": "Phone",
             "title1": "Location",
-            "title2": "Email"
+            "title2": "Email",
+            "subtitle": "Rakhmatullaeva street 18"
         },
         "map": {
             "title": "Relax at Our Hotel",
