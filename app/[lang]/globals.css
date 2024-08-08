@@ -66,6 +66,7 @@
 .rooms-blocks:nth-child(2n+1) {
   background-color: #9e7777;
 }
+
 .swiper-slide {
   height: auto !important;
 }

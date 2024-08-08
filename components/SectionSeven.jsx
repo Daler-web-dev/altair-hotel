@@ -9,16 +9,20 @@ gsap.registerPlugin(ScrollTrigger);
 const SectionSeven = ({ Playfair_DisplayFont, homepage }) => {
     const arr = [
         {
-            dcr: homepage.sectionsix.com
+            dcr: homepage.sectionsix.com,
+            name: "Ольга Романова"
         },
         {
-            dcr: homepage.sectionsix.com2
+            dcr: homepage.sectionsix.com2,
+            name: "Азиз Рахматов"
         },
         {
-            dcr: homepage.sectionsix.com3
+            dcr: homepage.sectionsix.com3,
+            name: "Нилуфар Ахмедова"
         },
         {
-            dcr: homepage.sectionsix.com4
+            dcr: homepage.sectionsix.com4,
+            name: "Юлия Лебедева"
         }
     ]
 
@@ -61,12 +65,8 @@ const SectionSeven = ({ Playfair_DisplayFont, homepage }) => {
                     arr.map((i, idx) => (
                         <div key={idx} className="com min-w-80 max-md:min-w-60 p-8 max-md:p-4 flex flex-col rounded-md bg-[#7d5a50] text-white">
                             <p className="text-sm text-center mb-5">{i.dcr}</p>
-                            <div className="w-fit h-fit mx-auto flex gap-3 mt-auto">
-                                <div className="bg-gray-500 p-6 rounded-lg"></div>
-                                <div className="">
-                                    <p>Camella</p>
-                                    <p>Lorem, ipsum.</p>
-                                </div>
+                            <div className="w-fit h-fit mx-auto gap-3 mt-auto">
+                                <p>{i.name}</p>
                             </div>
                         </div>
                     ))

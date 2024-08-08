@@ -29,8 +29,8 @@ export const metadata = {
             height: 600,
          }
       ],
-      locale: 'en_US',
       type: 'website',
+      locale: 'en_US',
    },
 };
 
