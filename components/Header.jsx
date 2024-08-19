@@ -13,6 +13,8 @@ const Header = ({ nav, lang }) => {
     const tl = useRef()
 
     useGSAP(() => {
+        gsap.set(".title", { y: 75 })
+
         gsap.from(".link", {
             y: -40,
             opacity: 0,

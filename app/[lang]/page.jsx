@@ -24,6 +24,10 @@ export const metadata = {
       default: "Altair Hotel",
       template: "%s - Altair Hotel"
    },
+   robots: {
+      index: false,
+      follow: true
+   },
    category: 'hotel',
    description: "Гостиница Altair предлагает уютные номера и первоклассный сервис в центре города. Забронируйте номер и насладитесь комфортным отдыхом!",
    openGraph: {
