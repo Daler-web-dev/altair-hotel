@@ -61,7 +61,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionfour.title2,
             dcr: "",
-            img: "/images/image-22.png",
+            img: "/images/image-22.webp",
             additionally: [
                 {
                     title: homepage.sectionfour.services,
@@ -96,7 +96,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionfour.title3,
             dcr: "",
-            img: "/images/image-23.png",
+            img: "/images/image-23.webp",
             additionally: [
                 {
                     title: homepage.sectionfour.services,

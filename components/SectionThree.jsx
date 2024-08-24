@@ -11,17 +11,17 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionthree.title,
             dcr: homepage.sectionthree.dcr,
-            img: "/images/services/transfer.png"
+            img: "/images/services/transfer.webp"
         },
         {
             title: homepage.sectionthree.title2,
             dcr: homepage.sectionthree.dcr2,
-            img: "/images/services/transfer.png"
+            img: "/images/services/breakfast.webp"
         },
         {
             title: homepage.sectionthree.title3,
             dcr: homepage.sectionthree.dcr3,
-            img: "/images/services/transfer.png"
+            img: "/images/services/transfer.webp"
         },
     ]
 
