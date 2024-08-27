@@ -1,0 +1,25 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://altair-hotel.uz/ru</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+    <loc>https://altair-hotel.uz/uz</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://altair-hotel.uz/uz/contacts</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://altair-hotel.uz/ru/contacts</loc>
+    <lastmod>2024-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

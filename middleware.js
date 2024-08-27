@@ -21,13 +21,15 @@ function getLocale(request) {
 
 export function middleware(request) {
     const pathname = request.nextUrl.pathname;
+
     const pathnameIsMissingLocale = i18n.locales.every(
         (locale) =>
             !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
     );
 
     // Redirect if there is no locale
-    if (pathnameIsMissingLocale) {
+
+    if (pathnameIsMissingLocale && pathname !== "/robots.txt" && pathname !== "/sitemap.xml") {
         const locale = getLocale(request);
         return NextResponse.redirect(
             new URL(
