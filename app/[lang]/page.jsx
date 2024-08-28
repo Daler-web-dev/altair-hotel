@@ -25,7 +25,7 @@ export const metadata = {
       template: "%s - Altair Hotel"
    },
    robots: {
-      index: false,
+      index: true,
       follow: true
    },
    category: 'hotel',
