@@ -141,21 +141,24 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                 start: "-10% center",
             }
         })
-        gsap.from(".title", {
+        gsap.from(".title-rooms", {
             y: 40,
             opacity: 0,
             duration: 1,
             scrollTrigger: {
-                trigger: ".four-sec",
-                start: "-10% center",
+                trigger: ".title-rooms",
+                start: "center bottom",
+                // end:"center 80%",
+                markers: 1,
+                // scrub: 1
             }
         })
     }, []);
 
     return (
         <div className="four-sec padding">
-            <div id='rooms' className="text-center">
-                <h2 className={`title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Наши номера</h2>
+            <div className="text-center">
+                <h2 className={`title-rooms text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Наши номера</h2>
             </div>
 
             <div className="mt-10 max-lg:mt-7 max-md:mt-7">
