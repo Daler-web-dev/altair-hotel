@@ -1,15 +1,16 @@
 import { NextResponse } from "next/server";
-
 import { i18n } from "@/i18n.config";
-
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
 function getLocale(request) {
     const negotiatorHeaders = {};
-    request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
+    request.headers.forEach((value, key) => {
+        if (key.toLowerCase() === "accept-language") {
+            negotiatorHeaders["accept-language"] = value;
+        }
+    });
 
-    // @ts-ignore locales are readonly
     const locales = i18n.locales;
     const languages = new Negotiator({
         headers: negotiatorHeaders,
@@ -27,24 +28,23 @@ export function middleware(request) {
             !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
     );
 
-    // Redirect if there is no locale
-
-    if (pathnameIsMissingLocale && pathname !== "/robots.txt" && pathname !== "/sitemap.xml") {
+    if (
+        pathnameIsMissingLocale &&
+        pathname !== "/robots.txt" &&
+        pathname !== "/sitemap.xml"
+    ) {
         const locale = getLocale(request);
+        const url = new URL(request.url);
+
         return NextResponse.redirect(
             new URL(
                 `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
-                request.url
+                url.origin
             )
         );
     }
 }
 
 export const config = {
-    matcher: [
-        // Skip all internal paths (_next)
-        '/((?!api|_next/static|_next/image|icon.ico|images|icons).*)'
-        // Optional: only run on root (/) URL
-        // '/'
-    ],
+    matcher: ["/((?!api|_next/static|_next/image|icon.ico|images|icons).*)"],
 };
