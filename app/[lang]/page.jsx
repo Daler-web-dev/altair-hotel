@@ -1,17 +1,13 @@
-import { FaHotel } from "react-icons/fa";
 import { Playfair_Display } from "next/font/google";
 
 import Hero from "@/components/Hero";
-import Image from "next/image";
 import SectionTwo from "@/components/SectionTwo";
 import SectionThree from "@/components/SectionThree";
 import SectionFour from "@/components/SectionFour";
-import SectionFive from "@/components/SectionFive";
 import SectionSeven from "@/components/SectionSeven";
 import SectioneEight from "@/components/SectioneEight";
 import { getDictionary } from "@/lib/dictionary";
 import SectionSix from "@/components/SectionSix";
-import Head from "next/head";
 
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],
