@@ -5,6 +5,7 @@
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
+  <url> <!-- Added missing opening <url> tag -->
     <loc>https://altair-hotel.uz/uz</loc>
     <lastmod>2024-08-27</lastmod>
     <changefreq>yearly</changefreq>
