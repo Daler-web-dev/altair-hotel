@@ -149,7 +149,6 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                 trigger: ".title-rooms",
                 start: "center bottom",
                 // end:"center 80%",
-                markers: 1,
                 // scrub: 1
             }
         })
