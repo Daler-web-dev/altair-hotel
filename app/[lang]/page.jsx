@@ -15,34 +15,6 @@ const Playfair_DisplayFont = Playfair_Display({
    subsets: ["latin"]
 });
 
-export const metadata = {
-   title: {
-      default: "Altair Hotel",
-      template: "%s - Altair Hotel"
-   },
-   robots: {
-      index: true,
-      follow: true
-   },
-   category: 'hotel',
-   description: "Гостиница Altair предлагает уютные номера и первоклассный сервис в центре города. Забронируйте номер и насладитесь комфортным отдыхом!",
-   openGraph: {
-      title: 'Altair Hotel',
-      description: 'Гостиница Altair предлагает уютные номера и первоклассный сервис в центре города. Забронируйте номер и насладитесь комфортным отдыхом!',
-      url: 'https://altair-hotel.uz',
-      siteName: 'altair-hotel.uz',
-      images: [
-         {
-            url: '/images/logo.png',
-            width: 800,
-            height: 600,
-         }
-      ],
-      locale: 'en_US',
-      type: 'website',
-   },
-};
-
 export default async function Home({ params: { lang } }) {
    const { homepage, modal } = await getDictionary(lang);
 

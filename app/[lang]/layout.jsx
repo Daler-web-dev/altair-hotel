@@ -24,13 +24,14 @@ export const metadata = {
       siteName: 'altair-hotel.uz',
       images: [
          {
-            url: '/images/logo.png',
+            url: '/images/icon.ico',
             width: 800,
             height: 600,
+            alt: "Altair Hotel"
          }
       ],
-      type: 'website',
       locale: 'en_US',
+      type: 'website',
    },
 };
 
