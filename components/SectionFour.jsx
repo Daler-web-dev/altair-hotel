@@ -21,12 +21,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 gsap.registerPlugin(ScrollTrigger);
-const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
+const SectionFour = ({ Playfair_DisplayFont, homepage, lang }) => {
     const arr = [
         {
             title: homepage.sectionfour.title,
             dcr: "",
             img: "/images/image-1.webp",
+            beRoomType: "",
             additionally: [
                 {
                     title: homepage.sectionfour.services,
@@ -62,6 +63,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
             title: homepage.sectionfour.title2,
             dcr: "",
             img: "/images/image-22.webp",
+            beRoomType: "",
             additionally: [
                 {
                     title: homepage.sectionfour.services,
@@ -97,6 +99,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
             title: homepage.sectionfour.title3,
             dcr: "",
             img: "/images/image-23.webp",
+            beRoomType: "",
             additionally: [
                 {
                     title: homepage.sectionfour.services,
@@ -188,9 +191,11 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                             <SwiperSlide key={index} className='max-w-5xl max-xl:max-w-4xl max-lg:max-w-3xl px-5 duration-200 ease-in'>
                                 <div className="bg-[#c9aa7e] room rounded-[60px] max-md:rounded-3xl overflow-hidden text-white">
                                     <div className="flex max-lg:flex-col">
-                                        <div className="w-1/2 max-lg:w-full p-14 max-lg:px-10 max-md:px-4 max-lg:py-8 max-sm:py-5">
+                                        <div
+                                            className="w-1/2 max-lg:w-full p-14 max-lg:px-10 max-md:px-4 max-lg:py-8 max-sm:py-5">
                                             <h3 className={`text-4xl max-md:text-3xl font-medium text-center ${Playfair_DisplayFont.className}`}>{el.title}</h3>
-                                            <hr className="line m-auto bg-[#D7DDE8]" />
+                                            <hr className="line m-auto bg-[#D7DDE8]"/>
+                                            <a></a>
                                             <p className=" text-center max-lg:text-sm">
                                                 {el.dcr}
                                             </p>
@@ -224,9 +229,12 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                                                 ))
                                             }
                                         </Swiper>
-                                        {/* <div className="py-5">
-                                            <button className="button m-auto block">{homepage.sectionfour.button}</button>
-                                        </div> */}
+                                        <a className="be-booking-link" href={`/${lang}/booking?room-type=${el.beRoomType}`}>
+                                            {homepage.sectionfour.button}
+                                        </a>
+                                        {/*{<div className="py-5">*/}
+                                        {/*    <button className="button m-auto block">{homepage.sectionfour.button}</button>*/}
+                                        {/*</div>}*/}
                                     </div>
                                 </div>
                             </SwiperSlide>
