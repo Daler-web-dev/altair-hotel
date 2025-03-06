@@ -10,6 +10,7 @@ import { getDictionary } from "@/lib/dictionary";
 import SectionSix from "@/components/SectionSix";
 import BeSearchForm from "@/components/be-forms/BeSearchForm";
 
+
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],
    display: 'swap',
