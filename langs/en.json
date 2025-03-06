@@ -92,5 +92,8 @@
         "lastName": "Last Name",
         "number": "Number",
         "button": "Save"
+    },
+    "booking": {
+        "title": "Booking"
     }
 }

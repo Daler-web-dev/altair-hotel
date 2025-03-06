@@ -1,9 +1,6 @@
 import { Playfair_Display } from "next/font/google";
-
-import ContactInfo from "@/components/ContactInfo";
-import Map from "@/components/Map";
 import { getDictionary } from "@/lib/dictionary";
-import BeSearchForm from "@/components/be-forms/BeSearchForm";
+import BeBookingForm from "@/components/be-forms/BeBookingForm";
 
 const Playfair_DisplayFont = Playfair_Display({
     weight: ["400", "500", "600"],
@@ -12,7 +9,7 @@ const Playfair_DisplayFont = Playfair_Display({
 });
 
 const Page = async ({ params: { lang } }) => {
-    const { contact } = await getDictionary(lang);
+    const { booking } = await getDictionary(lang);
 
     return (
         <div>
@@ -21,22 +18,12 @@ const Page = async ({ params: { lang } }) => {
                 <h2
                     className={`text-5xl max-xl:text-4xl md:text-center font-medium text-gray md:text-white ${Playfair_DisplayFont.className}`}
                 >
-                    {contact.title}
+                    {booking.title}
                 </h2>
             </div>
-            <BeSearchForm />
-            <div className="custom-container padding">
-                <div className="mx-20 max-xl:mx-10 max-lg:mx-0">
-                    <ContactInfo
-                        Playfair_DisplayFont={Playfair_DisplayFont}
-                        contact={contact}
-                    />
 
-                    <Map
-                        Playfair_DisplayFont={Playfair_DisplayFont}
-                        contact={contact}
-                    />
-                </div>
+            <div className="custom-container padding">
+                <BeBookingForm />
             </div>
         </div>
     );

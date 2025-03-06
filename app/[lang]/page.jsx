@@ -8,6 +8,7 @@ import SectionSeven from "@/components/SectionSeven";
 import SectioneEight from "@/components/SectioneEight";
 import { getDictionary } from "@/lib/dictionary";
 import SectionSix from "@/components/SectionSix";
+import BeSearchForm from "@/components/be-forms/BeSearchForm";
 
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],
@@ -23,7 +24,7 @@ export default async function Home({ params: { lang } }) {
          <section>
             <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} modalLang={modal} />
          </section>
-
+          <BeSearchForm />
          <section>
             <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
          </section>
@@ -33,7 +34,7 @@ export default async function Home({ params: { lang } }) {
          </section>
 
          <section>
-            <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
+            <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
          </section>
 
          {/* <section className="bg-[#c9aa7e]">
