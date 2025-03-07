@@ -56,6 +56,7 @@ const SectionTwo = ({ Playfair_DisplayFont, homepage, lang }) => {
 				<p className="two text-sm tracking-[1px] leading-5 text-gray">
 					{homepage.hero.dcr}
 				</p>
+
 				<Link
 					href={`/${lang}/contacts`}
 					className="two w-fit block button m-auto mt-5"
