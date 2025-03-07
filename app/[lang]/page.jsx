@@ -10,49 +10,76 @@ import { getDictionary } from "@/lib/dictionary";
 import SectionSix from "@/components/SectionSix";
 import BeSearchForm from "@/components/be-forms/BeSearchForm";
 
-
 const Playfair_DisplayFont = Playfair_Display({
-   weight: ['400', "500", "600"],
-   display: 'swap',
-   subsets: ["latin"]
+	weight: ["400", "500", "600"],
+	display: "swap",
+	subsets: ["latin"],
 });
 
 export default async function Home({ params: { lang } }) {
-   const { homepage, modal } = await getDictionary(lang);
+	const { homepage, modal } = await getDictionary(lang);
 
-   return (
-      <>
-         <section>
-            <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} modalLang={modal} />
-         </section>
-          <BeSearchForm />
-         <section>
-            <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
-         </section>
+	return (
+		<>
+			<section>
+				<Hero
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+					modalLang={modal}
+				/>
+			</section>
 
-         <section className="bg-[#c9aa7e]">
-            <SectionThree Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
-         </section>
+			<BeSearchForm />
 
-         <section>
-            <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
-         </section>
+			<section>
+				<SectionTwo
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+					lang={lang}
+				/>
+			</section>
 
-         {/* <section className="bg-[#c9aa7e]">
+			<section className="bg-[#c9aa7e]">
+				<SectionThree
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+				/>
+			</section>
+
+			<section>
+				<SectionFour
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+					lang={lang}
+				/>
+			</section>
+
+			{/* <section className="bg-[#c9aa7e]">
             <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section> */}
 
-         <section>
-            <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
-         </section>
+			<section>
+				<SectionSix
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+				/>
+			</section>
 
-         <section className="bg-[#c9aa7e]">
-            <SectionSeven Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
-         </section>
+			<section className="bg-[#c9aa7e]">
+				<SectionSeven
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+				/>
+			</section>
 
-         <section className="bg-[#c9aa7e]">
-            <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} modalLang={modal} />
-         </section>
-      </>
-   );
+			<section className="bg-[#c9aa7e]">
+				<SectioneEight
+					Playfair_DisplayFont={Playfair_DisplayFont}
+					homepage={homepage}
+					lang={lang}
+					modalLang={modal}
+				/>
+			</section>
+		</>
+	);
 }
