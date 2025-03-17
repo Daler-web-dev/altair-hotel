@@ -3,15 +3,15 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
-import React, { useState } from 'react'
-import Modal from './Modal';
+import React from 'react'
+// import Modal from './Modal';
 
 gsap.registerPlugin(ScrollTrigger);
 const SectioneEight = ({ Playfair_DisplayFont, homepage, modalLang }) => {
-    const [isOpenModal, setIsOpenModal] = useState(false);
+    // const [isOpenModal, setIsOpenModal] = useState(false);
 
-    const openModal = () => setIsOpenModal(true);
-    const closeModal = () => setIsOpenModal(false);
+    // const openModal = () => setIsOpenModal(true);
+    // const closeModal = () => setIsOpenModal(false);
 
     useGSAP(() => {
         gsap.from(".eight-sec-title ", {
@@ -27,7 +27,7 @@ const SectioneEight = ({ Playfair_DisplayFont, homepage, modalLang }) => {
 
     return (
         <>
-            <Modal isOpenModal={isOpenModal} closeModal={closeModal} modalLang={modalLang} />
+{/*             <Modal isOpenModal={isOpenModal} closeModal={closeModal} modalLang={modalLang} /> */}
             <div className="eight-sec custom-container padding flex gap-5 max-lg:flex-col lg:items-center justify-between">
                 <div className="max-w-4xl max-xl:max-w-3xl text-white">
                     <h2 className={`eight-sec-title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium ${Playfair_DisplayFont.className}`}>{homepage.sectionseven.title}</h2>
@@ -37,7 +37,7 @@ const SectioneEight = ({ Playfair_DisplayFont, homepage, modalLang }) => {
                     </p>
                 </div>
                 <div className="">
-                    <button onClick={openModal} className="eight-sec-title button">{homepage.hero.button}</button>
+{/*                     <button onClick={openModal} className="eight-sec-title button">{homepage.hero.button}</button> */}
                 </div>
             </div>
         </>
