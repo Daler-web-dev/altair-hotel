@@ -22,7 +22,7 @@ const ContactInfo = ({ Playfair_DisplayFont, contact }) => {
         {
             icon: <MdEmail className='text-[30px] max-lg:text-[25px]' color='#fff' />,
             title: contact.info.title2,
-            dcr: "altair@gmail.com"
+            dcr: "bookaltair@gmail.com"
         }
     ]
 
